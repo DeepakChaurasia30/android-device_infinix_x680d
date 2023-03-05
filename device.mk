@@ -75,6 +75,8 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.a2dp@1.0-impl \
     android.hardware.bluetooth.a2dp@1.0-service
 
+# Kernel Headers
+PRODUCT_VENDOR_KERNEL_HEADERS := $(LOCAL_PATH)/configs/kernel-headers
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
