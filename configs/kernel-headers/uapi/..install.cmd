@@ -1,1 +1,0 @@
-cmd_fol/include/uapi/.install := /bin/sh scripts/headers_install.sh fol/include/uapi ./include/uapi ; /bin/sh scripts/headers_install.sh fol/include/uapi ./include ; /bin/sh scripts/headers_install.sh fol/include/uapi ./include/generated/uapi ; for F in ; do echo "$(pound)include <asm-generic/$$F>" > fol/include/uapi/$$F; done; touch fol/include/uapi/.install

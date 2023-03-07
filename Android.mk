@@ -5,7 +5,7 @@
 #
 
 LOCAL_PATH := $(call my-dir)
-ifeq ($(TARGET_DEVICE),x680d)
+ifeq ($(TARGET_DEVICE),2e)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 include $(CLEAR_VARS)
 
@@ -24,10 +24,5 @@ $(VENDOR_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	$(hide) touch $@
 
 ALL_DEFAULT_INSTALLED_MODULES += $(VENDOR_SYMLINKS)
-
-$(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr: $(wildcard $(PRODUCT_VENDOR_KERNEL_HEADERS)/*)
-	rm -rf $@
-	mkdir -p $@/include
-	cp -a $(PRODUCT_VENDOR_KERNEL_HEADERS)/. $@/include
 
 endif
