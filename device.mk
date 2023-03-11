@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/vivo/horset
+DEVICE_PATH := device/infinix/x680d
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -13,7 +13,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/vivo/horset/horset-vendor.mk)
+$(call inherit-product, vendor/infinix/x680d/x680d-vendor.mk)
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
@@ -32,7 +32,7 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration.xml
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1600
+TARGET_SCREEN_HEIGHT := 1640
 TARGET_SCREEN_WIDTH := 720
 
 # Dynamic Partition

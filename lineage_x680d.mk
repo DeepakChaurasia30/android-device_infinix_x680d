@@ -16,11 +16,11 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 720
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := horset
-PRODUCT_NAME := lineage_horset
-PRODUCT_BRAND := vivo
-PRODUCT_MODEL := V6765
-PRODUCT_MANUFACTURER := vivo
+PRODUCT_DEVICE := x680d
+PRODUCT_NAME := lineage_x680d
+PRODUCT_BRAND := infinix
+PRODUCT_MODEL := x680d
+PRODUCT_MANUFACTURER := infinix
 
 # Build info
 BUILD_FINGERPRINT := google/raven/raven:12/SP2A.220405.004/8233519:user/release-keys
@@ -28,4 +28,4 @@ BUILD_FINGERPRINT := google/raven/raven:12/SP2A.220405.004/8233519:user/release-
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="raven-user 12 SP2A.220405.004 8233519 release-keys"
 
-PRODUCT_GMS_CLIENTID_BASE := android-vivo
+PRODUCT_GMS_CLIENTID_BASE := android-infinix

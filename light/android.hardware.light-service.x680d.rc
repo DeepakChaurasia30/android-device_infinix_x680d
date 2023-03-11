@@ -1,4 +1,4 @@
-service vendor.light-default /system/bin/hw/android.hardware.light-service.horset
+service vendor.light-default /system/bin/hw/android.hardware.light-service.x680d
     class hal
     user system
     group system

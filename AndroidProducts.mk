@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_horset.mk
+    $(LOCAL_DIR)/lineage_x680d.mk
 
 COMMON_LUNCH_CHOICES := \
-	lineage_horset-user \
-	lineage_horset-userdebug \
-	lineage_horset-eng
+	lineage_x680d-user \
+	lineage_x680d-userdebug \
+	lineage_x680d-eng
